@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: 'kornucopia';
-    src: url(/font/kornucopia.ttf) format('truetype');
+    src: url(font/kornucopia.ttf) format('truetype');
 }
 header {
     position: sticky;
