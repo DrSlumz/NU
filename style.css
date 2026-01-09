@@ -97,8 +97,8 @@ button a:hover {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-a:hover {
-    color: rgb(139, 139, 139);
+.album a:hover {
+    text-decoration: dotted underline;
 }
 /* Album Pages */
 body {
