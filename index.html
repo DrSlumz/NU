@@ -30,16 +30,46 @@
                     />
                 </div>
                 <header>
-                    <button>
-                        <a href="#logo">KoRn</a>
-                    </button>
-                    <button>
-                        <a href="#Members">Members</a>
-                    </button>
-                    <button><a href="#Discography">Discography</a></button>
-                    <button>
-                        <a href="https://drslumz.github.io/The-Bung/">Merch</a>
-                    </button>
+                    <div class="headerrow">
+                        <button>
+                            <a href="#logo">KoRn</a>
+                        </button>
+                        <button>
+                            <a href="#Members">Members</a>
+                        </button>
+                        <div class="discography">
+                            <button>
+                                <a href="#Discography">Discography</a>
+                            </button>
+                            <svg
+                                id="arrowdown"
+                                class="arrowdown"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="32px"
+                                viewBox="0 -960 960 960"
+                                width="32px"
+                                fill="#e3e3e3"
+                            >
+                                <path
+                                    d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"
+                                />
+                            </svg>
+                        </div>
+                        <button>
+                            <a href="https://drslumz.github.io/The-Bung/"
+                                >Merch</a
+                            >
+                        </button>
+                    </div>
+                    <div id="discographybox" class="discographybox">
+                        <a href="#album">KoRn</a>
+                        <a href="#album2">Life Is Peachy</a>
+                        <a href="#album3">Follow The Leader</a>
+                        <a href="#album4">Issues</a>
+                        <a href="#album5">Untouchables</a>
+                        <a href="#album6">Take A Look In The Mirror</a>
+                        <a href="#album7">See You On The Other Side</a>
+                    </div>
                 </header>
                 <div class="membersec">
                     <h1 id="Members">Members</h1>
@@ -132,72 +162,215 @@
                 </div>
                 <div class="albumsec">
                     <h1 id="Discography">Discography</h1>
-                    <div class="album">
-                        <a class="album" href="selftitle.html">
-                            <img src="images/Korn-Korn.jpg" alt="Self-Title" />
-                            KoRn</a
-                        >
-                        <h2>11 October 1994</h2>
+                    <div class="albumbox">
+                        <div id="album" class="album">
+                            <a class="album" href="selftitle.html">
+                                <img
+                                    src="images/Korn-Korn.jpg"
+                                    alt="Self-Title"
+                                />
+                                KoRn</a
+                            >
+                            <h2>11 October 1994</h2>
+                        </div>
+                        <div id="hoverbox" class="albumhover">
+                            <ol>
+                                <li>Blind</li>
+                                <li>Ball Toungue</li>
+                                <li>Need To</li>
+                                <li>Clown</li>
+                                <li>Divine</li>
+                                <li>Faget</li>
+                                <li>Shoots And Ladders</li>
+                                <li>Predictable</li>
+                                <li>Fake</li>
+                                <li>Lies</li>
+                                <li>Helmet in the Bush</li>
+                                <li>Daddy</li>
+                            </ol>
+                        </div>
                     </div>
-                    <div class="album">
-                        <a class="album" href="lifeispeachy.html">
-                            <img
-                                src="images/Korn-LifeIsPeachy.jpg"
-                                alt="LifeIsPeachy"
-                            />
-                            Life is Peachy</a
-                        >
-                        <h2>15 October 1996</h2>
+                    <div class="albumbox">
+                        <div id="album2" class="album">
+                            <a class="album" href="lifeispeachy.html">
+                                <img
+                                    src="images/Korn-LifeIsPeachy.jpg"
+                                    alt="LifeIsPeachy"
+                                />
+                                Life is Peachy</a
+                            >
+                            <h2>15 October 1996</h2>
+                        </div>
+                        <div id="hoverbox2" class="albumhover">
+                            <ol>
+                                <li>Twist</li>
+                                <li>Chi</li>
+                                <li>Lost</li>
+                                <li>Swallow</li>
+                                <li>Porno Creep</li>
+                                <li>Good God</li>
+                                <li>Mr.Rogers</li>
+                                <li>K@#*%!</li>
+                                <li>No Place To Hide</li>
+                                <li>Wicked (feat. Chino Moreno)</li>
+                                <li>A.D.I.D.A.S</li>
+                                <li>Lowrider</li>
+                                <li>Ass Itch</li>
+                                <li>Kill You</li>
+                            </ol>
+                        </div>
                     </div>
-                    <div class="album">
-                        <a class="album" href="followtheleader.html">
-                            <img
-                                src="images/Korn_follow_the_leader.jpg"
-                                alt="FollowTheLeader"
-                            />
-                            Follow The Leader</a
-                        >
-                        <h2>18 August 1998</h2>
+                    <div class="albumbox">
+                        <div id="album3" class="album">
+                            <a class="album" href="followtheleader.html">
+                                <img
+                                    src="images/Korn_follow_the_leader.jpg"
+                                    alt="FollowTheLeader"
+                                />
+                                Follow The Leader</a
+                            >
+                            <h2>18 August 1998</h2>
+                        </div>
+                        <div id="hoverbox3" class="albumhover">
+                            <ol start="13">
+                                <li>It's On!</li>
+                                <li>Freak On a Leash</li>
+                                <li>Got the Life</li>
+                                <li>Dead Bodies Everywhere</li>
+                                <li>Children of the Korn (feat.Ice Cube)</li>
+                                <li>B.B.K</li>
+                                <li>Pretty</li>
+                                <li>All In The Family (feat. Fred Durst)</li>
+                                <li>Reclaim My Place</li>
+                                <li>Justin</li>
+                                <li>Seed</li>
+                                <li>Cameltosis (feat. SlimKid 3)</li>
+                                <li>My Gift to You</li>
+                                <li>Earache My Eye</li>
+                            </ol>
+                        </div>
                     </div>
-                    <div class="album">
-                        <a class="album" href="issues.html">
-                            <img src="images/KoRnIssues.jpg" alt="Issues" />
-                            Issues</a
-                        >
-                        <h2>16 November 1999</h2>
+                    <div class="albumbox">
+                        <div id="album4" class="album">
+                            <a class="album" href="issues.html">
+                                <img src="images/KoRnIssues.jpg" alt="Issues" />
+                                Issues</a
+                            >
+                            <h2>16 November 1999</h2>
+                        </div>
+                        <div id="hoverbox4" class="albumhover">
+                            <ol>
+                                <li>Dead</li>
+                                <li>Falling Away From Me</li>
+                                <li>Trash</li>
+                                <li>4U</li>
+                                <li>Beg for Me</li>
+                                <li>Make Me Bad</li>
+                                <li>It's Gonna Go Away</li>
+                                <li>Wake Up</li>
+                                <li>Am I Going Crazy</li>
+                                <li>Hey Daddy</li>
+                                <li>Somebody Someone</li>
+                                <li>Let's Get This Party Started</li>
+                                <li>Wish You Could Be Me</li>
+                                <li>Counting</li>
+                                <li>Dirty</li>
+                            </ol>
+                        </div>
                     </div>
-                </div>
-                <div class="album">
-                    <a class="album" href="untochables.html">
-                        <img
-                            src="images/Unto_album_cover.jpg"
-                            alt="Untouchables"
-                        />
-                        Untouchables</a
-                    >
-                    <h2>11 June 2002</h2>
-                </div>
-                <div class="album">
-                    <a class="album" href="takealookinthemirror.html">
-                        <img
-                            src="images/Korn_-_Take_a_Look_in_the_Mirror.jpg"
-                            alt="TALITM"
-                        />
-                        Take A Look In The Mirror
-                    </a>
-                    <h2>21 November 2003</h2>
-                </div>
-                <div class="album">
-                    <a class="album" href="seeyouontheotherside.html">
-                        <img
-                            src="images/Korn_-_See_You_on_the_Other_Side.jpg"
-                            alt="SYOTOS"
-                        />
-                        See You On The Other Side
-                    </a>
-                    <h2>6 December 2005</h2>
+                    <div class="albumbox">
+                        <div id="album5" class="album">
+                            <a class="album" href="untochables.html">
+                                <img
+                                    src="images/Unto_album_cover.jpg"
+                                    alt="Untouchables"
+                                />
+                                Untouchables</a
+                            >
+                            <h2>11 June 2002</h2>
+                        </div>
+                        <div id="hoverbox5" class="albumhover">
+                            <ol>
+                                <li>Here To Stay</li>
+                                <li>Make Believe</li>
+                                <li>Blame</li>
+                                <li>Hollow Life</li>
+                                <li>Bottled Up Inside</li>
+                                <li>Thoughtless</li>
+                                <li>Hating</li>
+                                <li>One More Time</li>
+                                <li>Alone I Break</li>
+                                <li>Embrace</li>
+                                <li>Beat It Upright</li>
+                                <li>Wake Up Hate</li>
+                                <li>I'm Hiding</li>
+                                <li>No One There</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="albumbox">
+                        <div id="album6" class="album">
+                            <a class="album" href="takealookinthemirror.html">
+                                <img
+                                    src="images/Korn_-_Take_a_Look_in_the_Mirror.jpg"
+                                    alt="TALITM"
+                                />
+                                Take A Look In The Mirror
+                            </a>
+                            <h2>21 November 2003</h2>
+                        </div>
+                        <div id="hoverbox6" class="albumhover">
+                            <ol>
+                                <li>Right Now</li>
+                                <li>Break Some Off</li>
+                                <li>Counting On Me</li>
+                                <li>Here It Come Again</li>
+                                <li>Deep Inside</li>
+                                <li>Did My Time</li>
+                                <li>Everything I've Known</li>
+                                <li>Play Me (feat . Nas)</li>
+                                <li>Alive</li>
+                                <li>Let's Do This Now</li>
+                                <li>I'm Done</li>
+                                <li>Y'all Want a Single</li>
+                                <li>When Will This End</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div id="album7" class="albumbox">
+                        <div class="album">
+                            <a class="album" href="seeyouontheotherside.html">
+                                <img
+                                    src="images/Korn_-_See_You_on_the_Other_Side.jpg"
+                                    alt="SYOTOS"
+                                />
+                                See You On The Other Side
+                            </a>
+                            <h2>6 December 2005</h2>
+                        </div>
+                        <div id="hoverbox7" class="albumhover">
+                            <ol>
+                                <li>Twisted Transistor</li>
+                                <li>Politics</li>
+                                <li>Hypocrites</li>
+                                <li>Souvenir</li>
+                                <li>10 or a 2-way</li>
+                                <li>Throw Me Away</li>
+                                <li>Love Song</li>
+                                <li>Open Up</li>
+                                <li>Coming Undone</li>
+                                <li>Getting Off</li>
+                                <li>Liar</li>
+                                <li>For No One</li>
+                                <li>Seen It All</li>
+                                <li>Teerjerker</li>
+                                <li>Last Legal Drug</li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <script src="script.js"></script>
         </main>
     </body>
 </html>
