@@ -27,6 +27,7 @@ header {
     display: flex;
     justify-self: flex-start;
     align-items: center;
+    position: relative;
 }
 .discography button {
     width: 150px;
@@ -41,8 +42,8 @@ header {
     display: none;
     flex-direction: column;
     position: absolute;
-    right: 410px;
-    top: 90px;
+    width: 200px;
+    top: 80px;
     padding: 10px;
 }
 .discographybox a {
@@ -238,4 +239,75 @@ body {
 }
 svg:hover {
     fill: gray;
+}
+.member svg {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 500px;
+        height: auto;
+    }
+    .grouppic {
+        width: 350px;
+        height: auto;
+    }
+    header {
+        width: 100%;
+        font-size: 32px;
+        justify-content: center;
+    }
+
+    header a {
+        width: 100%;
+        font-size: 32px;
+    }
+    button {
+        width: 75px;
+    }
+    .arrowdown {
+        width: 18px;
+        height: 18px;
+    }
+    .discography button {
+        width: 75px;
+    }
+    .member {
+        flex-direction: column;
+        font-size: xx-small;
+        width: 188px;
+        text-align: center;
+    }
+    .membersec {
+        gap: 100px;
+    }
+    .memberinfo {
+        font-size: small;
+        display: none;
+        position: relative;
+        bottom: 353px;
+        height: 263px;
+    }
+    .member {
+        height: 264px;
+    }
+    .discographybox {
+        font-size: 10px;
+        width: 130px;
+        top: 40px;
+        padding: 10px;
+    }
+    .discographybox a {
+        font-size: 10px;
+    }
+    .member svg {
+        display: flex;
+        justify-content: center;
+    }
+    .infoarrowdown {
+        justify-self: center;
+    }
+    .memberinfo {
+        padding: 10px;
+    }
 }

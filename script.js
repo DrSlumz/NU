@@ -146,3 +146,16 @@ const showHide7 = () => {
 album7.addEventListener('mouseover', showHover7);
 album7.addEventListener('mouseout', showHide7);
 //
+const memberArrows = document.querySelectorAll('.infoarrowdown');
+memberArrows.forEach((arrow) => {
+    arrow.addEventListener('click', () => {
+        const infoBox = arrow.nextElementSibling;
+
+        if (infoBox.style.display === 'flex') {
+            infoBox.style.display = 'none';
+        } else {
+            infoBox.style.display = 'flex';
+        }
+    });
+});
+//
