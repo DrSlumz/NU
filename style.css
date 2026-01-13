@@ -155,6 +155,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    padding: 10px;
 }
 .cover {
     display: flex;
@@ -167,6 +168,32 @@ body {
     justify-self: center;
     text-align: center;
 }
+.pagesheader {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.centerpages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 530px;
+}
+.backtomenu {
+    display: flex;
+    position: absolute;
+    left: 0;
+}
+.hiddenone {
+    visibility: hidden;
+}
 /* Self-Titles */
 .selftrack {
     font-family: kornucopia;
@@ -176,6 +203,12 @@ body {
 }
 .selftrack:hover {
     color: rgb(255, 110, 110);
+}
+.selftrackheader {
+    font-family: kornucopia;
+    font-size: 75px;
+    color: red;
+    letter-spacing: 5px;
 }
 /* Life Is Peachy */
 .lifetrack {
@@ -187,15 +220,27 @@ body {
 .lifetrack:hover {
     color: rgb(178, 72, 178);
 }
+.lifetrackheader {
+    font-family: kornucopia;
+    font-size: 75px;
+    color: purple;
+    letter-spacing: 5px;
+}
 /* Follow The Leader */
 .followtrack {
     font-family: kornucopia;
     font-size: xx-large;
-    color: green;
+    color: rgb(0, 74, 0);
     text-decoration: none;
 }
 .followtrack:hover {
-    color: rgb(62, 194, 62);
+    color: green;
+}
+.followtrackheader {
+    font-family: kornucopia;
+    font-size: 75px;
+    color: rgb(0, 74, 0);
+    letter-spacing: 5px;
 }
 /* Issues */
 .issuetrack {
@@ -207,6 +252,12 @@ body {
 .issuetrack:hover {
     color: rgb(255, 205, 111);
 }
+.issuestrackheader {
+    font-family: kornucopia;
+    font-size: 75px;
+    color: orange;
+    letter-spacing: 5px;
+}
 /* Untouchables */
 .untrack {
     font-family: kornucopia;
@@ -216,6 +267,12 @@ body {
 }
 .untrack:hover {
     color: rgb(169, 88, 2);
+}
+.untrackheader {
+    font-family: kornucopia;
+    font-size: 75px;
+    color: rgb(87, 45, 0);
+    letter-spacing: 5px;
 }
 /* Take a Look In The Mirror */
 .taketrack {
@@ -227,6 +284,12 @@ body {
 .taketrack:hover {
     color: rgb(196, 196, 196);
 }
+.taketrackheader {
+    font-family: kornucopia;
+    font-size: 75px;
+    color: rgb(108, 108, 108);
+    letter-spacing: 5px;
+}
 /* See You On The Other Side */
 .seeyoutrack {
     font-family: kornucopia;
@@ -237,12 +300,20 @@ body {
 .seeyoutrack:hover {
     color: rgb(0, 82, 154);
 }
+.seeyoutrackheader {
+    font-family: kornucopia;
+    font-size: 75px;
+    color: rgb(27, 0, 163);
+    letter-spacing: 5px;
+}
+/*  */
 svg:hover {
     fill: gray;
 }
 .member svg {
     display: none;
 }
+
 @media screen and (max-width: 768px) {
     .logo {
         width: 500px;
@@ -309,5 +380,44 @@ svg:hover {
     }
     .memberinfo {
         padding: 10px;
+    }
+    svg {
+        width: 18px;
+        height: 18px;
+    }
+    .pagesheader h1 {
+        font-size: 24px;
+        letter-spacing: 2.5px;
+        width: 100%;
+        justify-content: center;
+    }
+    .centerpages {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        width: 400px;
+    }
+    .navigation {
+        width: 100%;
+        justify-content: center;
+    }
+    .radio {
+        justify-content: center;
+        display: flex;
+        width: 26px;
+        position: absolute;
+    }
+    .cover img {
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+    }
+    .cover a {
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+    }
+    .tracklist {
+        font-size: 12px;
     }
 }
