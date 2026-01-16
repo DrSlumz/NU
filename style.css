@@ -85,7 +85,7 @@ button a:hover {
     justify-self: center;
 }
 .grouppic {
-    width: 100%;
+    width: 100dvh;
     height: auto;
     display: flex;
     flex-direction: column;
