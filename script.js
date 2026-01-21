@@ -3,13 +3,15 @@ const albumBox = document.getElementById('discographybox');
 const arrow = document.getElementById('arrowdown');
 
 const showAlbum = () => {
-    arrow.classList.toggle('rotate');
-    if (albumBox.style.display === 'none') {
+    if (albumBox.style.display === 'none' || albumBox.style.display === '') {
         albumBox.style.display = 'flex';
+        arrow.classList.add('rotate');
     } else {
         albumBox.style.display = 'none';
+        arrow.classList.remove('rotate');
     }
 };
+
 arrow.addEventListener('click', showAlbum);
 //
 
@@ -147,14 +149,15 @@ album7.addEventListener('mouseover', showHover7);
 album7.addEventListener('mouseout', showHide7);
 //
 const memberArrows = document.querySelectorAll('.infoarrowdown');
+
 memberArrows.forEach((arrow) => {
     arrow.addEventListener('click', () => {
         const infoBox = arrow.nextElementSibling;
-
         if (infoBox.style.display === 'flex') {
             infoBox.style.display = 'none';
         } else {
             infoBox.style.display = 'flex';
         }
+        memberArrows.classList.add('rotate');
     });
 });
