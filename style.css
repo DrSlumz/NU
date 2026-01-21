@@ -163,6 +163,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: relative;
+}
+.albumcover {
+    display: flex;
+    flex-direction: row;
+    width: 316px;
+    height: 316px;
+}
+.albumwiki {
+    display: none;
 }
 .tracklist {
     display: flex;
@@ -196,6 +206,12 @@ body {
 .hiddenone {
     visibility: hidden;
 }
+
+.albuminf {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 /* Self-Titles */
 .selftrack {
     font-family: kornucopia;
@@ -211,6 +227,23 @@ body {
     font-size: 75px;
     color: red;
     letter-spacing: 5px;
+}
+#albumwiki {
+    display: none;
+}
+
+.selfabout {
+    display: none;
+    flex-direction: column;
+    color: red;
+    width: 400px;
+    padding: 0px 4px;
+    position: absolute;
+    top: 0px;
+    right: 4%;
+}
+#selftitlewiki:hover .selfabout {
+    display: flex;
 }
 /* Life Is Peachy */
 .lifetrack {
@@ -228,6 +261,19 @@ body {
     color: purple;
     letter-spacing: 5px;
 }
+.lifeabout {
+    display: none;
+    flex-direction: column;
+    color: purple;
+    width: 400px;
+    padding: 0px 4px;
+    position: absolute;
+    top: 0px;
+    right: 4%;
+}
+#lifewiki:hover .lifeabout {
+    display: flex;
+}
 /* Follow The Leader */
 .followtrack {
     font-family: kornucopia;
@@ -243,6 +289,19 @@ body {
     font-size: 75px;
     color: rgb(0, 74, 0);
     letter-spacing: 5px;
+}
+.followabout {
+    display: none;
+    flex-direction: column;
+    color: rgb(0, 74, 0);
+    width: 400px;
+    padding: 0px 4px;
+    position: absolute;
+    top: 0px;
+    right: 4%;
+}
+#followwiki:hover .followabout {
+    display: flex;
 }
 /* Issues */
 .issuetrack {
@@ -260,6 +319,19 @@ body {
     color: orange;
     letter-spacing: 5px;
 }
+.issuesabout {
+    display: none;
+    flex-direction: column;
+    color: orange;
+    width: 400px;
+    padding: 0px 4px;
+    position: absolute;
+    top: 0px;
+    right: 4%;
+}
+#issueswiki:hover .issuesabout {
+    display: flex;
+}
 /* Untouchables */
 .untrack {
     font-family: kornucopia;
@@ -275,6 +347,19 @@ body {
     font-size: 75px;
     color: rgb(87, 45, 0);
     letter-spacing: 5px;
+}
+.unabout {
+    display: none;
+    flex-direction: column;
+    color: rgb(87, 45, 0);
+    width: 400px;
+    padding: 0px 4px;
+    position: absolute;
+    top: 0px;
+    right: 4%;
+}
+#unwiki:hover .unabout {
+    display: flex;
 }
 /* Take a Look In The Mirror */
 .taketrack {
@@ -292,6 +377,19 @@ body {
     color: rgb(108, 108, 108);
     letter-spacing: 5px;
 }
+.takeabout {
+    display: none;
+    flex-direction: column;
+    color: rgb(108, 108, 108);
+    width: 400px;
+    padding: 0px 4px;
+    position: absolute;
+    top: 0px;
+    right: 4%;
+}
+#takewiki:hover .takeabout {
+    display: flex;
+}
 /* See You On The Other Side */
 .seeyoutrack {
     font-family: kornucopia;
@@ -307,6 +405,19 @@ body {
     font-size: 75px;
     color: rgb(27, 0, 163);
     letter-spacing: 5px;
+}
+.seeyouabout {
+    display: none;
+    flex-direction: column;
+    color: rgb(27, 0, 163);
+    width: 400px;
+    padding: 0px 4px;
+    position: absolute;
+    top: 0px;
+    right: 4%;
+}
+#seeyouwiki:hover .seeyouabout {
+    display: flex;
 }
 /*  */
 svg:hover {
@@ -359,8 +470,11 @@ svg:hover {
         font-size: small;
         display: none;
         position: relative;
-        bottom: 353px;
-        height: 263px;
+        bottom: 340px;
+        height: 264px;
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
     }
     .member {
         height: 264px;
@@ -441,5 +555,26 @@ svg:hover {
     }
     .album h2 {
         font-size: medium;
+    }
+    #selftitlewiki:hover .selfabout {
+        display: none;
+    }
+    #lifewiki:hover .lifeabout {
+        display: none;
+    }
+    #followwiki:hover .followabout {
+        display: none;
+    }
+    #issueswiki:hover .issuesabout {
+        display: none;
+    }
+    #unwiki:hover .unabout {
+        display: none;
+    }
+    #takewiki:hover .takeabout {
+        display: none;
+    }
+    #seeyouwiki:hover .seeyouabout {
+        display: none;
     }
 }
