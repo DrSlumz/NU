@@ -97,6 +97,8 @@ button a:hover {
     justify-self: center;
     align-items: center;
     gap: 50px;
+    border-bottom: 1px solid white;
+    padding-bottom: 100px;
 }
 .membersec img {
     width: 188px;
@@ -133,7 +135,6 @@ button a:hover {
     gap: 100px;
     padding-bottom: 100px;
     width: 100%;
-    border-bottom: 1px solid white;
 }
 .album {
     display: flex;
@@ -150,51 +151,6 @@ button a:hover {
     font-weight: 300;
     text-decoration: none;
     color: rgb(255, 255, 255);
-}
-.toursec {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-.tourbox {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-}
-.tour {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-}
-.live {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-self: center;
-    border: 1px solid white;
-    border-bottom: 2px solid white;
-    width: max-content;
-}
-.tourinf {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-}
-.tourheader {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.touryear {
-    display: flex;
-    justify-content: center;
-}
-.years {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    align-items: center;
 }
 
 /* Album Pages */
